@@ -40,7 +40,7 @@ h4 {
 		text-align: center;
 }
 
-body{
+body {
 	background-color:#EBEED0;
 }
 
@@ -53,18 +53,15 @@ body{
     margin: 0 auto;
 }
 
-#nav {
+ul {
     padding: 0;
 	  list-style-type: none;
-}
-
-#nav li {
 	  margin: 0;
 		padding: 0;
 		border-bottom: 1.5px solid #ccc;
 }
 
-#nav a:link, #nav a:visited {
+ul a:link, ul a:visited {
 	display: block;
 	color: #ffffff;
 	background-color: #BECE4C;
@@ -76,6 +73,6 @@ body{
 	text-decoration: none;
 }
 
-#nav a:hover, #nav a:active {
+ul a:hover, ul a:active {
 	background-color: #7a991a;
 }
