@@ -4,6 +4,26 @@ html {
 	font-size: 100%;
 }
 
+nav ul li {
+    display: block;
+    border-top: 1px #79896d solid;
+}
+
+nav a {
+    color: #f8ecc2;
+    display: block;
+    text-decoration: none;
+    padding: 20px 30px;
+}
+
+header {
+    display: flex;
+    flex-flow: row;
+    background-color: #BECE4C;
+    margin: 0;
+    padding: 0 10px;
+}
+
 p {
 	  color: #AFACAC;
     font-family: 'Merriweather Sans', Georgia, "Times New Roman", sans-serif;
@@ -53,7 +73,7 @@ body {
     margin: 0 auto;
 }
 
-ul {
+div ul {
     padding: 0;
 	  list-style-type: none;
 	  margin: 0;
@@ -61,7 +81,7 @@ ul {
 		border-bottom: 1.5px solid #ccc;
 }
 
-ul a:link, ul a:visited {
+div ul a:link, div ul a:visited {
 	display: block;
 	color: #ffffff;
 	background-color: #BECE4C;
@@ -73,6 +93,45 @@ ul a:link, ul a:visited {
 	text-decoration: none;
 }
 
-ul a:hover, ul a:active {
+div ul a:hover, div ul a:active {
 	background-color: #7a991a;
+}
+
+.menu-trigger {
+	order: 2;
+	font-size: 1.75em;
+	width: 2em;
+}
+
+header h1 {
+    order: 1;
+    font-size: 2em;
+}
+
+nav ul {
+    display: none;
+}
+
+@media screen and (min-width: 700px){
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        border-top: none;
+    }
+
+    .menu-trigger {
+        display: none;
+    }
+
+    header h1 {
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+    }
+
 }
